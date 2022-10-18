@@ -6,18 +6,22 @@
 
 task main()
 {
+// Starting up each of the motors
 startMotor(leftmotor1, 10);
 startMotor(rightmotor1, 10);
 startMotor(leftmotor2, 10);
 startMotor(rightmotor2, 10);
 stop;
-while(1==1)
+
+// While makes it run smoother	
+	while(1==1)
 
 		{
 			motor[leftmotor1] = vexRT[Ch3];
 			motor[rightmotor1] = vexRT[Ch2];
-
+			//Connects controller joycons to each motor
 			if(vexRT[Btn6U] == 1)
+			// Also button connects to button?
 		{
 			
 			
